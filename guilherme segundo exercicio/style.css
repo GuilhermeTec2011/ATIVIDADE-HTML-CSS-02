@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F8F8F8;
+    color: #0A5F55;
+}
+
+header {
+    background: linear-gradient(135deg, #0A5F55, #00995D);
+    color: #ffffff;
+    padding: 30px 15px;
+    text-align: center;
+    border-bottom: 5px solid #0A5F55;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.container h2 {
+    margin-bottom: 25px;
+    padding-left: 12px;
+    border-left: 6px solid #0A5F55;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card-produto {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-produto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-produto img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.card-produto h3 {
+    font-size: 1.2rem;
+    color: #00995D;
+    margin-bottom: 8px;
+}
+
+.card-produto p {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.preco {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2a9d8f;
+    margin-bottom: 15px;
+}
+
+.btn-whatsapp {
+    background-color: #00995D;
+    color: #ffffff;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.btn-whatsapp:hover {
+    background-color: #1da851;
+}
+
+
+/* ===================================================================
+   PASSO 7: RODAPÉ DO SITE (footer) E BORDA SUPERIOR
+   
+   EXPLICAÇÃO DA BORDA SUPERIOR:
+   A propriedade "border-top" cria uma linha na parte superior da caixa.
+   Sintaxe: border-top: [largura] [estilo] [cor];
+   
+   SUA TAREFA:
+   1. Defina a cor de fundo (background-color) do rodapé como azul-escuro (#1d3557).
+   2. Crie uma borda superior (border-top) de 4px, estilo solid, na cor vermelha (#e63946).
+   =================================================================== */
+footer {
+    /* DIGITE O BACKGROUND-COLOR DO FOOTER ABAIXO: */
+    background-color: #0A5F55;
+
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 50px;
+
+    /* DIGITE O BORDER-TOP DO FOOTER ABAIXO: */
+    border-top: 4px solid #0A5F55;
+}
+
+.redes-sociais {
+    margin-top: 15px;
+}
+
+.btn-social {
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn-instagram { background-color: #00995D; }
+.btn-facebook  { background-color: #00995D; }
